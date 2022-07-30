@@ -31,10 +31,10 @@ def read_data(path, n_motions=1000, time_steps=1001):
     data_inputs = np.concatenate(data_inputs)
     data_outputs = np.concatenate(data_outputs)
 
-    # Shuffle
-    shuffler = np.random.permutation(len(data_inputs))
-    data_inputs = data_inputs[shuffler]
-    data_outputs = data_outputs[shuffler]
+    # # Shuffle
+    # shuffler = np.random.permutation(len(data_inputs))
+    # data_inputs = data_inputs[shuffler]
+    # data_outputs = data_outputs[shuffler]
 
     return data_inputs, data_outputs
 
@@ -88,7 +88,7 @@ def plot_result(prediction, test_dataset_y, test_dataset_x, dataset_id, time, sa
     axs[1].set_xlabel("Time (s)")
     axs[1].set_ylabel("Amplitude")
     fig.tight_layout()
-    plt.show()
+    # plt.show()
     plot_name = f"result-{dataset_id}.png"
     if save_dir == None:
         pass

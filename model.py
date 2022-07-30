@@ -13,7 +13,7 @@ def Conv1D(time_steps, dim, fig_dir):
     model.add(layers.Flatten())
     model.add(layers.Dense(time_steps, activation="softmax"))
     model.summary()
-    plot_model(model, to_file=fig_dir, show_shapes=True, show_layer_activations=True)
+    # plot_model(model, to_file=fig_dir, show_shapes=True, show_layer_activations=True)
     return model
 
 def seq2seq(time_steps, dim, fig_dir):
@@ -26,5 +26,5 @@ def seq2seq(time_steps, dim, fig_dir):
     model.add(
         layers.Dense(time_steps, activation="softmax"))
     model.summary()
-    plot_model(model, to_file=fig_dir, show_shapes=True, show_layer_activations=True)
+    # plot_model(model, to_file=fig_dir, show_shapes=True, show_layer_activations=True)
     return model

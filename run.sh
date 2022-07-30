@@ -1,0 +1,1 @@
+python3 train.py --data_path="dataset_narrow" --model_option="Conv1D" --out_ids 1 2 3 4 5

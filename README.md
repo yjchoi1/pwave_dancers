@@ -11,7 +11,7 @@ The idea is inspired by [PhaseNet](https://github.com/wayneweiqiang/PhaseNet)
 * Team members: Aser Abbas, Sajan K.C., Soolmaz Khoshkalam, Yongjin Choi
 * Mentor: Meibai Li
 
-## Implementation
+## Run
 ```python
 python3 train.py --data_path="dataset_example" --model_option="Conv1D" --out_ids 1 2 3 4 5
 ```
